@@ -21,7 +21,7 @@ The solution consits of 3 files:
 * MAIN.PY
 * TEST_MAIN.PY
 
-MAIN.PY
+__MAIN.PY__
 In the file the log parser class, as well as CLI are implemented.
 The AbstractLogParser class contains three methods, used for XML logs handling.
 The __init__ method is used as a constructor for attributes creation.
@@ -35,7 +35,7 @@ The script can be run from the command prompt by using the following commands:
 * <py main.py report> or <py main.py report -folder=DIR> - where DIR is the folder required; the command is used to parse XML logs filed from the directory and create a report based on the data parsed. 
 * <py main.py result> or <py main.py result -folder=DIR -type=TYPE>, - where DIR is the folder required, and TYPE is the report type required (PASS, FAIL or SKIP); the default type of PASS is used; the command calls the parse and then get_result_by_type methods, and returns the number of tests with the result specified.
 
-TEST_MAIN.PY
+__TEST_MAIN.PY__
 The file contains unit tests script for the MAIN.PY script. The testing script is based on the unittest framework.
 The script contains 35 tests, that are used to check the main script behavior. The unit tests are implemented as methods of the TestLogParser class.
 The tests cover the initialization method, parsing of the XML log files, different reports correctness. The CLI implementation is not covered with the unit tests; the manual testing to ensure the correct behavior was performed.
